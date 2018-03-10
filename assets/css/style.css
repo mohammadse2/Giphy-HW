@@ -1,0 +1,54 @@
+
+#jumbotron{
+    background-color:#007bff;
+    text-align: center;
+    border-radius: .25rem;
+    color: #fff;
+}
+
+#animal-form, label, p {
+    color:blue;  
+}
+
+ .btnClass{
+     margin:10px;
+     height:50px;
+     width:200px;
+     color: #fff;
+    background-color: #007bff;
+
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+ .btn{
+    margin-top:20px;
+     height:50px;
+     width:180px; 
+    position: relative;
+ }
+
+img { 
+    height: 150px;
+    width: 150px;
+    border-radius: .25rem;
+
+}
+
+.imgClass{
+    float:left;
+    margin:5px;
+}
+
+
+footer {
+	clear: both;
+	margin-top: 40px;
+	position: bottom;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
