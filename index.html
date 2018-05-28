@@ -5,76 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>giphy Homework</title>
 
-    <!-- Added a link to the Favicon Image -->
-    <link rel="favicon" type="image/png" href="assets/images/giphy_logo.png">
-
-    <!-- Added a link to the Reset.CSS File -->
+    <!-- Add a link to the Reset.CSS File -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
-    <!-- Added a link to the style.CSS File -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-    <!-- Added a link to the Bootstrap -->
+    <!-- Add a link to the Bootstrap-CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+
+    <!-- Add a link to the style.CSS File -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Add a link to the Favicon Image -->
+    <link rel="favicon" type="image/png" href="assets/images/giphy_logo.png">
+    <title>giphy Homework</title>
 
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="jumbotron jumbotron-fluid" id="jumbotron">
-            <div class="container">
-                <h1 class="display-4">Select Animal</h1>
-            </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>Select Animal</h1>
         </div>
+    </div>
+
+    <div class="container">
 
         <!-- Button area  -->
         <div id="buttons-area"></div>
 
         <!-- Action Submission Form  -->
-        <div class="col-3 col-sm-3 col-md-3 col-lg-3">
-            <form id="animal-form">
-                <h2>
-                    <legend>Animal Submission</legend>  
-                </h2>
-                <!-- <div class="form-group"> -->
-                <label for="animal-input">Add your Animal</label>
-                <input type="text" id="animal-input">
-                <!-- </div> -->
-                <input id="add-animal" type="submit" value="Add an animal" class="btn btn-primary">
-
-            </form>
-        </div>
-
+        <form id="animal-form">
+            <div class="input-group mt-4 mx-auto">
+                <input type="text" id="animal-input" class="form-control" placeholder="Add an Animal">
+                <button id="add-animal" type="submit" value="Add animal">Submit</button>
+            </div>
+        </form>
         <!-- Animal images area -->
-        <div class="col-9 col-sm-9 col-md-9 col-lg-9">
+        <div class=" row col-12 col-sm-12 col-md-12 col-lg-12 ml-auto">
             <div id="animal-view"></div>
-            <!-- </div> -->
-
-            <!-- Footer -->
-            <footer>
-                <div id="footer" class="container">
-                    <h4 id="copyright">&copy; Copyright 2018 Moe Soheili</h4>
-                </div>
-            </footer>
-
         </div>
 
-        <!-- Added a link to the Bootstrap -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-        <!-- Added a link to the JQuery Library -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-        <!-- Added a link to the JavaScript File-->
-        <script type="text/javascript" src="assets/javascript/java.js"></script>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <span class="text-muted">&#169; Copyright 2018 Moe Soheili</span>
+        </div>
+    </footer>
+
+    <!-- Add a link to the Bootstrap-JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Add a link to the JQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Add a link to the JavaScript File-->
+    <script type="text/javascript" src="assets/javascript/java.js"></script>
 </body>
 
 </html>

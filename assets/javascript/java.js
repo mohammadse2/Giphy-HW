@@ -1,4 +1,4 @@
-$("body").css({ "background-image": "url('assets/images/background.jpg')","height":"100%","background-size":"cover"})
+// $("body").css({ "background-image": "url('assets/images/background.jpg')","height":"100%","background-size":"cover","background-position": "center","background-repeat": "no-repeat"})
 
 $(document).ready(function () {
   // Array of animal 
@@ -16,7 +16,6 @@ $(document).ready(function () {
       $("#buttons-area").append(button);
     }
   }  // End of the animalButtons function
-
 
 
   // Add new item to the item list

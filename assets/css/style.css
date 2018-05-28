@@ -1,41 +1,79 @@
 
-#jumbotron{
-    background-color:#007bff;
-    text-align: center;
-    border-radius: .25rem;
-    color: #fff;
-}
-
-#animal-form, label, p {
-    color:blue;  
-}
-
- .btnClass{
-     margin:10px;
-     height:50px;
-     width:200px;
-     color: #fff;
-    background-color: #007bff;
-
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-}
-
- .btn{
-    margin-top:20px;
-     height:50px;
-     width:180px; 
+html {
     position: relative;
- }
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 70px;
+}
+
+body::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, rgb(252, 252, 33), rgb(255, 136, 0),red);
+    position: absolute;
+    top: 250px;
+    z-index: 1;
+}
+
+body::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, rgb(252, 252, 33), rgb(255, 136, 0),red);
+    position: absolute;
+    bottom: 70px;
+    z-index: 1;
+}
+
+.jumbotron{
+    /* background-image: url("../images/jumbotron.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover; */
+    background-color: #101011;
+    text-align: center;
+    color: #fff;
+    height:250px;
+  }
+
+.jumbotron h1{
+font-family: cursive;
+font-size: 80px;
+letter-spacing: 20px;
+}
+
+.btnClass{
+    margin:10px;
+    height:50px;
+    width:200px;
+    color: #fff;
+    background: linear-gradient(to right, rgb(252, 252, 33), rgb(255, 136, 0),red);
+    border: 1px solid transparent;
+    line-height: 1.5;
+    border-radius: 5px;
+}
+
+.btn{
+    margin-top:20px;
+    height:50px;
+    width:180px; 
+    position: relative;
+
+}
 
 img { 
     height: 150px;
     width: 150px;
-    border-radius: .25rem;
+    border-radius: 5px;
+}
 
+img:hover {
+    cursor: url("../images/playpause.png"), pointer;
 }
 
 .imgClass{
@@ -43,12 +81,41 @@ img {
     margin:5px;
 }
 
-
-footer {
-	clear: both;
-	margin-top: 40px;
-	position: bottom;
-	bottom: 0;
-	left: 0;
-	text-align: center;
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    padding: 0;
+    background-color: #101011;
 }
+
+.input-group{
+    max-width: 300px;
+}
+
+#animal-input{
+    border-color:#ffc107;
+}
+
+#animal-input:hover{
+    border-color:#c49710;
+}
+
+#add-animal{
+    height: 50px;
+    width:100px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #ffc107;
+    border-color:#ffc107;
+}
+
+#add-animal:hover{
+    background-color: #c49710;
+}
+
+
+
+
