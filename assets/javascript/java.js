@@ -1,8 +1,7 @@
-// $("body").css({ "background-image": "url('assets/images/background.jpg')","height":"100%","background-size":"cover","background-position": "center","background-repeat": "no-repeat"})
-
 $(document).ready(function () {
   // Array of animal 
   var animals = ["lion", "tiger", "snake", "bee", "bear", "dog", "wolf", "cat", "cow", "duck"]
+  var colors = ["purple", "pink", "red", "orange", "yellow", "olive", "green", "blue", "violet", "brown"]
 
 
   // Display animal in the button
@@ -10,8 +9,9 @@ $(document).ready(function () {
     $("#buttons-area").empty();
     for (var i = 0; i < animals.length; i++) {
       var button = $("<button>");
-      button.addClass("btnClass");
-      button.attr("buttonName", animals[i]);
+      var randomColor = colors[Math.floor(Math.random() * colors.length)]
+      button.addClass("btnClass ").css({ "border-color": randomColor, "background-color": "black" })
+      button.attr("buttonName", animals[i]).css({ "color": randomColor })
       button.text(animals[i]);
       $("#buttons-area").append(button);
     }
@@ -20,14 +20,14 @@ $(document).ready(function () {
 
   // Add new item to the item list
   $("#add-animal").on("click", function (event) {
-    event.preventDefault(); // ++mySelf++
+    event.preventDefault();
     var animal = $("#animal-input").val().trim();
     if (animal === "") {
       alert("You left the link empty, Please enter an animal name then push the 'Add an animal' button")
       return false;
     }
     animals.push(animal);
-    $("#animal-input").val("") // ++mySelf++
+    $("#animal-input").val("")
     animalButtons();
   });
 
